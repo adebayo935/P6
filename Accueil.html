@@ -1,6 +1,5 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="styles.css"/>
@@ -8,87 +7,166 @@
 	</head>
 	<body>
 		<div class="page">
-			<div class="section" id="best_film">
+			<section class="section" id="best_film">
 					<h1>Meilleur film</h1>
 					<h2 id="best_film_title">Titre du film</h2>
 					<span class="best_film_img"><a href="#?w=500" rel="popup" id="best_film_img"></a></span>
-					<script type="text/javascript" src="best_movie.js"></script>
 					<button class="best_button" id="best_button">Résumé</button>
-					<p class="best_synopsys" id="description_best">Synopsys</p> 
-			</div>
-			<div class="section">
+					<p class="best_synopsys" id="description_best">Synopsys</p>
+			</section>
+			<script src="best_movie.js"></script>
+			<section class="section">
 				<h1>Les mieux notés</h1>
-				<div class="slider slider-1">
-				  <div class="photos">
-					  <a href="#?w=500" rel="popup"><img alt="" class="shown" id="best_film_1_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="best_film_2_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="best_film_3_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="best_film_4_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="best_film_5_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="best_film_6_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="best_film_7_img"></a>
-					<div class="buttons">
-					  <div class="prev"></div>
-					  <div class="next"></div>
-					</div>
-				  </div>
+				<div class="carousel">
+					<ul class="carousel-items">
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="best_film_1_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="best_film_2_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="best_film_3_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="best_film_4_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="best_film_5_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="best_film_6_img"></a>
+						</div>
+					</li>
+					</ul>
 				</div>
-				<script type="text/javascript" src="other_best.js"></script>
+					<script src="other_best.js"></script>
+			</section>
+			<section class="section">
+					<h1>Action</h1>
+			<div class="carousel">
+				<ul class="carousel-items">
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat1_film_1_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat1_film_2_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat1_film_3_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat1_film_4_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat1_film_5_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat1_film_6_img"></a>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="section">
-				<h1>Action</h1>
-				<div class="slider slider-2">
-				  <div class="photos">
-					  <a href="#?w=500" rel="popup"><img alt="" class="shown" id="cat1_film_1_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat1_film_2_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat1_film_3_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat1_film_4_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat1_film_5_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat1_film_6_img"></a>
-					<div class="buttons">
-					  <div class="prev"></div>
-					  <div class="next"></div>
-					</div>
-				  </div>
-				</div>
-				<script type="text/javascript" src="cat_1.js"></script>
+					<script src="cat_1.js"></script>
+				</section>
+				<section class="section">
+					<h1>Comedy</h1>
+			<div class="carousel">
+				<ul class="carousel-items">
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat2_film_1_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat2_film_2_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat2_film_3_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat2_film_4_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat2_film_5_img"></a>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="card">
+						  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat2_film_6_img"></a>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="section">
-				<h1>Comedy</h1>
-				<div class="slider slider-3">
-				  <div class="photos">
-					  <a href="#?w=500" rel="popup"><img alt="" class="shown" id="cat2_film_1_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat2_film_2_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat2_film_3_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat2_film_4_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat2_film_5_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat2_film_6_img"></a>
-					<div class="buttons">
-					  <div class="prev"></div>
-					  <div class="next"></div>
-					</div>
-				  </div>
-				</div>
-				<script type="text/javascript" src="cat_2.js"></script>
-			</div>
-			<div class="section">
+				<script src="cat_2.js"></script>
+			</section>
+		<section class="section">
 				<h1>Musical</h1>
-				<div class="slider slider-4">
-				  <div class="photos">
-					  <a href="#?w=500" rel="popup"><img alt="" class="shown" id="cat3_film_1_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat3_film_2_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat3_film_3_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat3_film_4_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat3_film_5_img"></a>
-					  <a href="#?w=500" rel="popup"><img alt="" id="cat3_film_6_img"></a>
-					<div class="buttons">
-					  <div class="prev"></div>
-					  <div class="next"></div>
-					</div>
-				  </div>
-				</div>
-				<script type="text/javascript" src="cat_3.js"></script>
-			</div>
+				<div class="carousel">
+				<ul class="carousel-items">
+                <li class="carousel-item">
+                    <div class="card">
+					  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat3_film_1_img"></a>
+                    </div>
+                </li>
+                <li class="carousel-item">
+                    <div class="card">
+					  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat3_film_2_img"></a>
+                    </div>
+                </li>
+                <li class="carousel-item">
+                    <div class="card">
+					  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat3_film_3_img"></a>
+                    </div>
+                </li>
+                <li class="carousel-item">
+                    <div class="card">
+					  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat3_film_4_img"></a>
+                    </div>
+                </li>
+                <li class="carousel-item">
+                    <div class="card">
+					  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat3_film_5_img"></a>
+                    </div>
+                </li>
+                <li class="carousel-item">
+                    <div class="card">
+					  <a href="#?w=500" rel="popup"><img alt="" src="none" class="shown" id="cat3_film_6_img"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+		<script src="cat_3.js"></script>
+		</section>
 		</div>
 		<div class="fondo_transparente"> 
 			<div class="modal"> 
@@ -108,14 +186,5 @@
 			</div> 
 			</div> 
 		</div>
-		<script type="text/javascript" src="carousel.js"></script>
 	</body>
-	<style> @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); body{display: flex;} .fondo_transparente{ top: 0; left: 0; ; position: absolute; height: 100vh; width: 100%; display: none; } 
-	.modal{ background: linear-gradient(0deg,white 70%, crimson 30%); width: 700px; height: 680px; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; display: flex; flex-direction: column; justify-content: space-evenly; border-radius: 30px; } 
-	.modal_cerrar{ background: white; position: absolute; right: -20px; color: crimson; top: -20px; width: 40px; height: 40px; border-radius: 25px; display: flex; justify-content: center; align-items: center; cursor: pointer; } 
-	.modal_titulo{ text-align:center; color: white; font-size: 40px; } 
-	.modal_mensaje{ bottom:100px; padding: 10px 30px; text-align:left; } 
-	.modal_botones{ width: 100%; background: whitesmoke; border-top:whitesmoke 1px; padding-top: 20px; display: flex; justify-content: space-evenly; } 
-	.boton{ background: white; padding: 8px 30px; color: crimson; text-decoration: none; border-radius: 25px; border:1px solid crimson } .boton:hover{ background: crimson; color: white; } </style>
-
 </html>

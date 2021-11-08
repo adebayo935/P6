@@ -3,67 +3,124 @@
 		text-align:center;
 		font-size:medium;
 		height:640px;
-		width:1500px;
+		width:1900px;
 		font-style:italic;
 		border-style:solid;
 		position:relative;
 	}
-
-.best_button
-{
-	position:absolute;
-	bottom:170px;
-	text-align:center;
-	height:20px;
-	left:720px;
-}
-
+	
 .best_synopsys
 {
 	opacity:0;
-	left:445px;
-	bottom:50px;
-	position:absolute;
+	font-size:30px;
 }
-.slider {
-    width: 700px;
-    margin: 0 auto 20px;
+
+/********************************
+* Basics
+*********************************/
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem auto 1rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+main {
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+header {
+    padding: 1rem 2rem;
     text-align: center;
 }
 
-.slider .photos {
-    position: relative;
-    height: 333px;
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
 }
 
-.slider .photos img {
-	width:50%;
-    position: absolute;
-    left: 0px;
-    opacity: 0;
-    transition: opacity 1s;
+/********************************
+* Carousel styles
+*********************************/
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
 }
 
-.slider .photos img.shown {
-    opacity: 1;
-	left:200px;
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
 }
 
-.prev:before,
-.next:before {
-  color: black;
-  font-size: 100px;
-  position: absolute;
-  top: 15%;
-  cursor: pointer;
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
 }
 
-.prev:before {
-  content: '<';
-  left: -100px;
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
 }
 
-.next:before {
-  content: '>';
-  right: -100px;
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
 }
+
+
+/********************************
+* Breakpoints
+*********************************/
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .carousel-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .carousel-item {
+        flex-basis: 450px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); body{display: flex;} .fondo_transparente{ top: 0; left: 0; ; position: sticky; height: 100vh; width: 100%; display: none; } 
+	.modal{ background: linear-gradient(0deg,white 70%, crimson 30%); width: 700px; height: 680px; top: 50%; left: -950px; transform: translate(-50%, -50%); position: absolute; display: flex; flex-direction: column; justify-content: space-evenly; border-radius: 30px; } 
+	.modal_cerrar{ background: white; position: absolute; right: -20px; color: crimson; top: -20px; width: 40px; height: 40px; border-radius: 25px; display: flex; justify-content: center; align-items: center; cursor: pointer; } 
+	.modal_titulo{ text-align:center; color: white; font-size: 40px; } 
+	.modal_mensaje{ bottom:100px; padding: 10px 30px; text-align:left; } 
+	.modal_botones{ width: 100%; background: whitesmoke; border-top:whitesmoke 1px; padding-top: 20px; display: flex; justify-content: space-evenly; } 
+	.boton{ background: white; padding: 8px 30px; color: crimson; text-decoration: none; border-radius: 25px; border:1px solid crimson } .boton:hover{ background: crimson; color: white; }
